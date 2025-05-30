@@ -94,12 +94,6 @@ nav .logo {
   position: relative;
   width: 100%;
   height: 100vh;
-  /* background: black;
-  background: linear-gradient(
-    180deg,
-    #000000 80%,
-    rgba(0, 255, 255, 0.05) 100%
-  ); */
   overflow: hidden;
   border-bottom: 5px solid #0ff;
 }
@@ -364,6 +358,43 @@ section .btn-outline-primary:hover {
   box-shadow: 0 0 15px #00ffff;
 }
 
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.cards-container .card {
+  background-color: rgba(0, 255, 255, 0.05);
+  text-align: center;
+  font-family: "Orbitron", monospace;
+  border-top: 5px solid #0ff;
+  border-radius: 5px;
+  color: #0ff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.cards-container .card img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cards-container .card .text {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cards-container .card h3 {
+  margin: 0;
+}
+
 footer {
   background: linear-gradient(180deg, #000000 0%, rgba(0, 255, 255, 0.05) 100%);
 }
@@ -523,6 +554,10 @@ footer .btn-primary:hover {
     width: 100%;
     text-align: center;
   }
+
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Responsive adjustments */
@@ -601,5 +636,9 @@ footer .btn-primary:hover {
   .menu {
     right: 15px;
     min-width: 140px;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
