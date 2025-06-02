@@ -437,12 +437,17 @@ footer .btn-primary:hover {
   color: #fff;
 }
 
+footer .icons {
+  margin: 20px;
+}
+
 footer .icons a {
   color: white;
   padding: 15px;
   margin: 3px;
   font-size: 20px;
   border-radius: 3px;
+  display: inline;
 }
 
 footer .icons a:hover {
