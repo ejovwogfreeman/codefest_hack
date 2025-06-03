@@ -10,6 +10,7 @@ html {
   height: 100%;
   background: black;
   font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* NAVBAR */
